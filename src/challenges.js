@@ -1,17 +1,45 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(v1,v2) {
   // seu código aqui
+
+  if (v1 && v2) {
+    return true;
+  } else {
+    return false;
+  }   
 }
+
+// testando
+console.log(compareTrue(false, true));
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  let area;
+
+  area = (base*height)/2;
+
+  return area;
 }
 
+// testando
+console.log(calcArea(51,1));
+
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
   // seu código aqui
+
+  for (let i = 0; i < string.length; i++){
+    if (string[i] != " ") {
+      
+    }
+  }
+
 }
+
+console.log(splitSentence("Grace of the Lords"))
+string = "Grace Of The";
+console.log(string.length);
 
 // Desafio 4
 function concatName() {
