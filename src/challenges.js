@@ -28,28 +28,36 @@ console.log(calcArea(51,1));
 // Desafio 3
 function splitSentence(string) {
   // seu código aqui
-
-  for (let i = 0; i < string.length; i++){
-    if (string[i] != " ") {
-      
-    }
-  }
-
+  let splitted = string.split(' ');
+  return console.log(splitted);
 }
 
-console.log(splitSentence("Grace of the Lords"))
-string = "Grace Of The";
-console.log(string.length);
+// teste
+console.log(splitSentence("Grace of the Lords"));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(stringArray) {
+  
+  let index = stringArray.length-1;
+  let res = stringArray[index] + ", " + stringArray[0];
+  return console.log(res);
 }
 
+// teste
+let stringArray = ['foguete', 'não', 'tem', 'ré'];
+console.log(concatName(stringArray));
+
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  
+  wins = wins*3;
+  let rest = wins+ties;
+  return console.log(rest);
 }
+
+//teste
+console.log(footballPoints(0,0));
 
 // Desafio 6
 function highestCount() {
