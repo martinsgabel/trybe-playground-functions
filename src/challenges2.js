@@ -1,7 +1,22 @@
 // Desafio 10
-function techList() {
+function techList(tecnoList) {
   // seu código aqui
+
+  if (techList === "") {
+    let resposta = "Vazio!";
+    console.log(resposta);
+  } else {
+    
+  }
+
+  let tecnologia = {
+    tech: "Tech",
+    name: "Nome"
+  }
 }
+
+let tecnoList = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+let name = "Eloísa";
 
 // Desafio 11
 function generatePhoneNumber() {

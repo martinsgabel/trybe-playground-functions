@@ -1,12 +1,12 @@
 // Desafio 1
-function compareTrue(v1,v2) {
+function compareTrue(v1, v2) {
   // seu código aqui
 
   if (v1 && v2) {
     return true;
   } else {
     return false;
-  }   
+  }
 }
 
 // testando
@@ -17,13 +17,13 @@ function calcArea(base, height) {
   // seu código aqui
   let area;
 
-  area = (base*height)/2;
+  area = (base * height) / 2;
 
   return area;
 }
 
 // testando
-console.log(calcArea(51,1));
+console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence(string) {
@@ -60,7 +60,7 @@ function footballPoints(wins, ties) {
 //teste
 console.log(footballPoints(3,0));
 
-// Desafio 6 - UM GRANDE PAU NO CU
+// Desafio 6 
 function highestCount(numArray) {
   // consultei para comparar com o que tinha feito para achar o erro, eu tinha invertido a ordem da expressão dentro da condição if
   // Link: https://stackoverflow.com/questions/13794225/finding-largest-integer-in-an-array-in-javascript
@@ -76,7 +76,7 @@ function highestCount(numArray) {
 
   for (i = 0; i < numArray.length; i++) {
     if (numMaior === numArray[i]) {
-      qntdMaior = qntdMaior++;
+      qntdMaior+=1;
     }
   }
 
@@ -130,34 +130,68 @@ console.log(fizzBuzz(noArrays));
 
 // Desafio 9
 function encode(string2) {
-  // seu código aqui
+  // Recebi ajuda de meus colegas no Slack e em especial de minha colega Luá para descobrir que o sinal de atribuição não substitui caracteres dentro de uma string.  
+  let encoded = "";
   
   for (let i = 0; i < string2.length ; i++) {
     switch (string2[i]){
-      case 'a': string2[i] = 1;
+      case "a": 
+        encoded += 1;
         break;
-      case 'e': string2[i] = 2;
+      case "e": 
+        encoded += 2;
         break;
-      case 'i': string2[i] = 3;
+      case "i": 
+        encoded += 3;
         break;
-      case 'o': string2[i] = 4;
+      case "o": 
+        encoded += 4;
         break;
-      case 'u': string2[i] = 5;
+      case "u": 
+        encoded += 5;
         break;
-      default: string2 = string2[i];
+      default:
+        encoded += string2[i];
         break;
     }
-  }
-
-  return(string2);
+  }  
+  return console.log(encoded);
 }
-function decode() {
+
+function decode(string3) {
   // seu código aqui
+  let decoded = "";
+  
+  for (let i = 0; i < string3.length ; i++) {
+    switch (string3[i]){
+      case "1": 
+        decoded += "a";
+        break;
+      case "2": 
+        decoded += "e";
+        break;
+      case "3": 
+        decoded += "i";
+        break;
+      case "4": 
+        decoded += "o";
+        break;
+      case "5": 
+        decoded += "u";
+        break;
+      default:
+        decoded += string3[i];
+        break;
+    }
+  }  
+  return console.log(decoded);
 }
 
 //teste
 let string2 = "Gracie";
 console.log(encode(string2));
+let string3 = "Gr1c32";
+console.log(decode(string3));
 
 module.exports = {
   calcArea,
