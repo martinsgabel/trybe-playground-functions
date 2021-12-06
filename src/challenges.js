@@ -24,7 +24,7 @@ function splitSentence(string) {
   // consultei o site para descobrir uma forma mais prática de repartir a string
   // Link: https://www.samanthaming.com/tidbits/83-4-ways-to-convert-string-to-character-array/
   let splitted = string.split(' ');
-  return console.log(splitted);
+  return splitted;
 }
 
 // Desafio 4
@@ -32,7 +32,7 @@ function concatName(stringArray) {
   
   let index = stringArray.length-1;
   let res = stringArray[index] + ", " + stringArray[0];
-  return console.log(res);
+  return res;
 }
 
 // Desafio 5
