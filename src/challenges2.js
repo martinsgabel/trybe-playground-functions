@@ -5,7 +5,7 @@ function techList(tecnoList, name) {
   tecnoList.sort();
   let resposta = [];
   
-  if (tecnoList === "") {
+  if (tecnoList === []) {
     let resposta = "Vazio!";
 
   } else {    
