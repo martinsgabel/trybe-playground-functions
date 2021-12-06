@@ -41,7 +41,7 @@ function footballPoints(wins, ties) {
   
   wins = wins*3;
   let rest = wins+ties;
-  return console.log(rest);
+  return rest;
 }
 
 // Desafio 6 
@@ -64,7 +64,7 @@ function highestCount(numArray) {
     }
   }
 
-  return console.log(qntdMaior);
+  return qntdMaior;
 }
 
 // Desafio 7
@@ -98,7 +98,8 @@ function fizzBuzz(noArrays) {
       resArray.push("bug!")
     }
   }
-  return console.log(resArray);
+
+  return resArray;
 }
 
 // Desafio 9
@@ -128,7 +129,7 @@ function encode(string2) {
         break;
     }
   }  
-  return console.log(encoded);
+  return encoded;
 }
 
 function decode(string3) {
@@ -157,7 +158,7 @@ function decode(string3) {
         break;
     }
   }  
-  return console.log(decoded);
+  return decoded;
 }
 
 module.exports = {
