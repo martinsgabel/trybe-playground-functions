@@ -70,22 +70,29 @@ function highestCount(numArray) {
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
   // seu código aqui
-  // consultei na internet uma forma de transformar qualquer resultado em positivo e encontrei a função Math.abs(x) em https://qastack.com.br/programming/4652104/convert-a-negative-number-to-a-positive-one-in-javascript#:~:text=Talvez%20voc%C3%AA%20deva%20declarar%3A%20positivo,%C3%A9%20o%20ex%2Dsinal%20X.&text=Multiplicar%20por%20(%2D1)%20%C3%A9,converter%20n%C3%BAmeros%20negativos%20em%20positivos.
-  let cat1Distance = Math.abs(mouse - cat1);
-  let cat2Distance = Math.abs(mouse - cat2);
+  let cat1Distance = mouse - cat1;
+  let cat2Distance = mouse - cat2;
   let resGato;
 
-  if (cat1Distance > cat2Distance){
+  if (cat1Distance < 0) {
+    cat1Distance = cat1Distance * -1;
+  } else if (cat2Distance < 0) {
+    cat2Distance = cat2Distance * -1;
+  }
+
+  if (cat1Distance < cat2Distance){
     resGato = "cat1";
-    return resGato;
+    return console.log(resGato);
   } else if (cat2Distance == cat1Distance){
     resGato = "os gatos trombam e o rato foge";
-    return resGato;
+    return console.log(resGato);
   } else {
     resGato = "cat2";
-    return resGato;
+    return console.log(resGato);
   }
 }
+
+console.log(catAndMouse(10,4,22));
 
 // Desafio 8
 function fizzBuzz(noArrays) {
