@@ -6,16 +6,16 @@ function techList(tecnoList, name) {
   let resposta = [];
   
   if (tecnoList === []) {
-    let resposta = "Vazio!";
+    resposta = "Vazio!";
 
   } else {    
     for (let i = 0; i < tecnoList.length; i++){
       resposta.push(this["obj"+i] = { tech: tecnoList[i], name: name })    
-    }
-
-    return resposta;
+    }    
   }
+  return resposta;
 }
+
 
 
 // Desafio 11
