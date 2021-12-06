@@ -13,7 +13,7 @@ function techList(tecnoList, name) {
       resposta.push(this["obj"+i] = { tech: tecnoList[i], name: name })    
     }
 
-    return respost;
+    return resposta;
   }
 }
 
