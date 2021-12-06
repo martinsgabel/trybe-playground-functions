@@ -15,12 +15,8 @@ function techList(tecnoList, name) {
       resposta.push(this["obj"+i] = { tech: tecnoList[i], name: name })    
     }    
   }
-  return console.log(resposta);
+  return resposta;
 }
-
-tecnoList = [];
-name = "Lucas";
-console.log(techList(tecnoList,name));
 
 
 // Desafio 11
