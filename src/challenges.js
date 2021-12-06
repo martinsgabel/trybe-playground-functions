@@ -72,13 +72,17 @@ function catAndMouse(mouse,cat1,cat2) {
   // seu código aqui
   let cat1Distance = mouse - cat1;
   let cat2Distance = mouse - cat2;
+  let resGato;
 
   if (cat1Distance > cat2Distance){
-    return console.log("cat1");
+    resGato = "cat1";
+    return resGato;
   } else if (cat2Distance === cat1Distance){
-    return console.log("os gatos trombam e o rato foge");
+    resGato = "os gatos trombam e o rato foge";
+    return resGato;
   } else {
-    return console.log("cat2");
+    resGato = "cat2";
+    return resGato;
   }
 }
 
