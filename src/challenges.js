@@ -9,9 +9,6 @@ function compareTrue(v1, v2) {
   }
 }
 
-// testando
-console.log(compareTrue(false, true));
-
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
@@ -22,9 +19,6 @@ function calcArea(base, height) {
   return area;
 }
 
-// testando
-console.log(calcArea(51, 1));
-
 // Desafio 3
 function splitSentence(string) {
   // consultei o site para descobrir uma forma mais prática de repartir a string
@@ -32,9 +26,6 @@ function splitSentence(string) {
   let splitted = string.split(' ');
   return console.log(splitted);
 }
-
-// teste
-console.log(splitSentence("Grace of the Lords"));
 
 // Desafio 4
 function concatName(stringArray) {
@@ -44,10 +35,6 @@ function concatName(stringArray) {
   return console.log(res);
 }
 
-// teste
-let stringArray = ['foguete', 'não', 'tem', 'ré'];
-console.log(concatName(stringArray));
-
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
@@ -56,9 +43,6 @@ function footballPoints(wins, ties) {
   let rest = wins+ties;
   return console.log(rest);
 }
-
-//teste
-console.log(footballPoints(3,0));
 
 // Desafio 6 
 function highestCount(numArray) {
@@ -83,10 +67,6 @@ function highestCount(numArray) {
   return console.log(qntdMaior);
 }
 
-// teste
-let numArray = [9, 1, 2, 3, 9, 5, 7];
-console.log(highestCount(numArray));
-
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
   // seu código aqui
@@ -101,9 +81,6 @@ function catAndMouse(mouse,cat1,cat2) {
     return console.log("cat2");
   }
 }
-
-// teste
-console.log(catAndMouse(1,13,13));
 
 // Desafio 8
 function fizzBuzz(noArrays) {
@@ -123,10 +100,6 @@ function fizzBuzz(noArrays) {
   }
   return console.log(resArray);
 }
-
-// teste
-noArrays = [9, 25];
-console.log(fizzBuzz(noArrays));
 
 // Desafio 9
 function encode(string2) {
@@ -186,12 +159,6 @@ function decode(string3) {
   }  
   return console.log(decoded);
 }
-
-//teste
-let string2 = "Gracie";
-console.log(encode(string2));
-let string3 = "Gr1c32";
-console.log(decode(string3));
 
 module.exports = {
   calcArea,
