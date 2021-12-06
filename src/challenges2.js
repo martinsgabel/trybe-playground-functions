@@ -1,10 +1,7 @@
 // Desafio 10
 function techList(tecnoList, name) {
   // seu código aqui
-  // Array = [];
-  // EM ORDEM ALFABÉTICA Array = [obj, obj]
-
-  //alfabetizando o array tecnoList
+  // consultei como alterar automaticamente o nome do objeto em loop e aprendi sobre o "this[]" https://stackoverflow.com/questions/8260156/how-do-i-create-dynamic-variable-names-inside-a-loop 
   tecnoList.sort();
   let resposta = [];
   
@@ -13,17 +10,13 @@ function techList(tecnoList, name) {
 
   } else {    
     for (let i = 0; i < tecnoList.length; i++){
-      [this["obj"+i]] = { tech: tecnoList[i], nome: name };      
+      resposta.push(this["obj"+i] = { tech: tecnoList[i], name: name })    
     }
 
-    return console.log(obj1);
+    return respost;
   }
 }
 
-//teste
-let tecnoList = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-let name = "Eloísa";
-console.log(techList(tecnoList,name))
 
 // Desafio 11
 function generatePhoneNumber() {
